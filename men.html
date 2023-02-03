@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="css/styel.css"> -->
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="particles" id="particles-js">
+        <div class="codu">
+        <div class="container text-center " id="container">
+            <div class="row w-25  m-auto pt-5 ">
+                    <div class="form" id="form" >
+                    <div class="imgs pt-3 pb-4 ">
+                        <img  src="imgs/icon.png" alt="">
+                    </div>
+                    <div class="input pt-2">
+                        <input type="text" name="gord"  class="form-control mt-4" placeholder="Name" id="Name">
+                    </div>        
+                    <span id="name_error">
+                        <i class='bx bx-error-circle error-icon'></i>
+                        <p class="error-text">
+                            please fill up Name 
+                        </p>
+                    </span>
+
+                    <div class="input pt-2" id="inputBox">
+                        <input type="email"  class="form-control mt-3 w-100" placeholder="email" id="Email">
+                    </div>
+
+                    <span id="email_error">
+                        <i class='bx bx-error-circle error-icon'></i>
+                        <p class="error-text">
+                            please fill up your Email or Phone 
+                        </p>
+                    </span>
+
+                    <div class="input pt-2">
+                        <input type="password"  class="form-control mt-3" placeholder="password" id="Password">
+                      
+                    </div>
+
+                    <span id="password_error">
+                        <i class='bx bx-error-circle error-icon'></i>
+                        <p class="error-text">
+                            please fill up your password
+                        </p>
+                    </span>
+                        <button  class="btn btn-outline-primary mt-3" id="posh">Sidn Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+
+ <!-- API -->
+    <div class="container">
+        <div class="row text-white" id="rowData">
+           
+        </div>
+    </div>
+
+
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/men.js"></script>
+ 
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:"poppins",sans-serif;
+    }  
+    .particles{
+        width: 100%;
+        height: 100vh;
+        background-image: url(imgs/bg.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }  
+    .imgs img{
+        width: 50%;
+        border-radius: 100px;
+    }
+    .form{
+        padding: 20px;
+        background: rgba(249, 249, 249, 0);
+        box-shadow: 0 8px 32px 0 rgba(2, 34, 239, 0.37);
+        backdrop-filter: blur( 5px );
+        -webkit-backdrop-filter: blur( 5px );
+        border-radius: 37px;
+        border: 3px solid rgba(7, 101, 243, 0.493);
+    }
+
+    .codu{
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+      
+    }
+    
+    .particles .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+    }
+    
+#name_error,
+#email_error,
+#password_error{
+   display: flex;
+   align-items:center;
+   margin-top: 6px;
+   color: red;
+   font-size: 13px;
+   display: none;
+}
+#name_error .error-icon,
+#email_error .error-icon,
+#password_error .error-icon{
+    font-size: 16px;
+    margin: 10px;
+    margin-top: -5px;
+    display: none;
+}
+   
+</style>
